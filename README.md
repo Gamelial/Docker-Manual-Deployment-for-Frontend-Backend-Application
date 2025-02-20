@@ -23,7 +23,7 @@ Change the IP Address
 docker build -t computexfrontend .
 docker image ls
 docker run -d --name frontend -p 5173:5173 --network aitech computexfrontend
-docker logs frontend
+docker logs computexfrontend
 Validate 
 72.144.23.229:5173
 
@@ -48,11 +48,11 @@ DATABASES = {
 
 Ls
 cat Dockerfile
-docker build -t backend .
+docker build -t computexbackend .
 docker image ls
 
 START THE BACKEND
-docker run -d --name computexbackend -p 8000:8000 --network aitech backend
+docker run -d --name computexbackend -p 8000:8000 --network aitech computexbackend
 docker ps
 docker logs computexbackend
 
