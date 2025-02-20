@@ -22,7 +22,7 @@ nano src/components/api/auth.ts
 Change the IP Address
 docker build -t computexfrontend .
 docker image ls
-docker run -d --name frontend -p 5173:5173 --network aitech computexfrontend
+docker run -d --name computexfrontend -p 5173:5173 --network aitech computexfrontend
 docker logs computexfrontend
 Validate 
 72.144.23.229:5173
